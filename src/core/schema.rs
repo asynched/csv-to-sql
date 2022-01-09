@@ -51,7 +51,7 @@ pub fn get_table_schema(file_contents: &String) -> Vec<SQLType> {
 }
 
 pub fn get_create_table_query(
-    tablename: &str,
+    tablename: &String,
     table_schema: &Vec<SQLType>,
     file_contents: &String,
 ) -> String {
@@ -66,7 +66,7 @@ pub fn get_create_table_query(
 }
 
 fn generate_create_table(
-    tablename: &str,
+    tablename: &String,
     columns: &Vec<String>,
     data_types: &Vec<SQLType>,
 ) -> String {

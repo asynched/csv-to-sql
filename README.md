@@ -20,7 +20,7 @@ $ cargo run
 #### Building the app (production)
 
 ```sh
-$ cargo build
+$ cargo build --release
 ```
 
 ## Author
